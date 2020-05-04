@@ -10,20 +10,20 @@
 
 ## Report
 
+Set up environment variables
+
 ```bash
-# Setting GITHUB_USERNAME environment variable
-$ export GITHUB_USERNAME=big_telescope
-
-# Setting GIST_TOKEN environment variable
-$ export GIST_TOKEN=/**********************
-
+$ export GITHUB_USERNAME=big_telescope # Set up GITHUB_USERNAME environment variable
+$ export GIST_TOKEN=/********************** # Set up GIST_TOKEN environment variable
 $ alias edit=subl # Setting "edit" name
 ```
 
-```ShellSession
-$ mkdir -p ${GITHUB_USERNAME}/workspace //Creation of a workspace/ folder
+Set up workspace environment
 
-$ cd ${GITHUB_USERNAME}/workspace //Getting into "workspace" folder
+```ShellSession
+$ mkdir -p ${GITHUB_USERNAME}/workspace #Creation of a workspace/ folder
+
+$ cd ${GITHUB_USERNAME}/workspace #Getting into "workspace" folder
 
 # Writing the full pathname to the stdout
 $ pwd
@@ -35,6 +35,8 @@ $ pwd
 
 ```
 
+Create local folders for comfortable organization
+
 ```ShellSession
 # Creation tasks/, projects/, reports/ folders inside workspace/ folder
 $ mkdir -p workspace/tasks/
@@ -42,6 +44,8 @@ $ mkdir -p workspace/projects/
 $ mkdir -p workspace/reports/
 $ cd workspace
 ```
+
+Get nodejs archive and install utility
 
 ```ShellSession
 # Getting nodejs archive
@@ -68,6 +72,8 @@ $ rm -rf node-v6.11.5-linux-x64.tar.xz
 # Renaming unpacked nodejs programm
 $ mv node-v6.11.5-linux-x64 node
 ```
+
+Update Path
 
 ```ShellSession
 # Looking into node/bin folder
@@ -97,6 +103,8 @@ EOF
 $ source scripts/activate
 ```
 
+Install gistup
+
 ```ShellSession
 
 # Installing gistup
@@ -112,6 +120,8 @@ $ npm install -g gistup
 $ ls node/bin
 ```
 
+Update json file
+
 ```ShellSession
 
 # Adding string below to gistup.json file
@@ -121,6 +131,8 @@ $ cat > ~/.gistup.json <<EOF
 }
 EOF
 ```
+
+Make report
 
 ## Report
 
